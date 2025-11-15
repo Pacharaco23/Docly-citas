@@ -28,6 +28,7 @@ class AppointmentTable extends DataTableComponent
             Column::make("Id", "id")
                 ->sortable(),
             Column::make("Paciente", "patient.user.name")
+                ->searchable()
                 ->sortable(),
             Column::make("Doctor", "doctor.user.name")
                 ->sortable(),
